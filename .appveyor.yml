@@ -1,8 +1,8 @@
-version: '1.0.{build}'
+configuration: Release
 
-assembly_info:
-  patch: true
-  file: MyVersion.cs
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}-rc1'
+before_build:
+    - nuget restore
+    
+build: 
+    - verbosity: minimal
+    - publish_wrap: true
