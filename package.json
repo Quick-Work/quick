@@ -1,0 +1,20 @@
+{
+  "name": "QuickClass",
+  "version": "1.0.0",
+  "productName": "QuickClass",
+  "description": "Quick Class App",
+  "main": "main.js",
+  "author": "Priyank",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "build --macos",
+    "build": "electron-packager . Quick-Class --overwrite --icon=./build/icon.icns --appCategoryType=public.app-category.education --platform=darwin --arch=x64 --prune=true --out=quick_class --asar=true"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "asar": "^0.13.0",
+    "electron": "^1.6.6",
+    "electron-builder": "^17.1.1",
+    "electron-packager": "^8.6.0"
+  }
+}

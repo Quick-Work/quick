@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>Quick Work</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="quick_work.css">
+<link rel="icon" href="build/icons.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="w3-theme-l5">
+
+<!-- Navbar Udpated -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  
+  <div class="w3-dropdown-hover">
+   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" style="padding: 13.3px 15px !important;">
+    <i class="fa fa-home w3-margin-right"></i>
+    Quick Class
+   </a><br><br>
+   <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Google Search" data-tab>
+    <i class="google"></i>
+    <span class="info">Google</span>
+  </a>
+
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Google Drive" data-tab>
+    <i class="drive"></i>
+    <span class="info">Google Drive</span>
+  </a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Google Classroom" data-tab>
+    <i class="classroom"></i>
+    <span class="info">Google Classroom</span>
+  </a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Gmail" data-tab>
+    <i class="gmail"></i>
+    <span class="info">Gmail</span>
+  </a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Google Docs" data-tab>
+    <i class="docs"></i>
+    <span class="info">Google Docs</span>
+  </a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Genesis" data-tab>
+    <i class="genesis"></i>
+    <span class="info">Genesis</span>
+  </a>
+  
+   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Google Slides" data-tab>
+    <i class="slides"></i>
+    <span class="info">Google Slides</span>
+  </a>
+  
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<!-- w3code \- [ FEXDJWQB1SPJ ] and updated [FEZRIKRQZBQU]  -->
+<div id="small-nav" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link None</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Google Search"><i class="google"></i> Google Search</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Google Drive"><i class="drive"></i> Google Drive</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Google Classroom"><i class="classroom"></i> Google Classroom</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Gmail"><i class="gmail"></i> Gmail</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Google Docs"><i class="docs"></i> Google Docs</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Genesis"><i class="genesis"></i> Genesis</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" data-tab data-small-tab title="Google Slides"><i class="slides"></i> Google Slides</a>
+</div>
+
+
+<div class='tabbed'>
+  <div class='tabs'>
+    <div class='tab active' draggable="true" data-content="Google Search" data-id="1">
+      <span class="title">Search Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Google Drive" data-id="2">
+      <span class="title">Drive Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Google Classroom" data-id="3">
+      <span class="title">Classroom Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Gmail" data-id="4">
+      <span class="title">Gmail</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Google Docs" data-id="5">
+      <span class="title">Drive Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Genesis" data-id="6">
+      <span class="title">Classroom Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class='tab' draggable="true" data-content="Google Slides" data-id="7">
+      <span class="title">Slides Google</span>
+      <span>&times;</span>
+    </div>
+    
+    <div class="fa add-tab">
+      <span class="add"></span>
+    </div>
+  </div>
+</div>
+  
+
+<!-- Loader Status -->
+<div class="indicator">
+  <loading-message></loading-message>
+</div>
+
+<!-- Control bar -->
+<div class="control-bar">
+  <span class="arrow-left"> 
+    <i class="fa arrow"></i>
+  </span>
+
+  <span class="arrow-right">
+    <i class="fa arrow"></i>
+  </span>
+  
+  <span class="reload w3-hover-teal">
+    <i class="fa fa-refresh"></i>
+  </span>
+  
+  <span>
+    <input class="local-url">
+  </span>
+</div>
+
+<!-- Page Container -->
+<div style="min-height: 90vh;" class="webview-holder">   
+  <div data-content="Google Search">
+    <webview autosize src="https://www.google.com" plugins allowpopups data-id="1"></webview>
+  </div> 
+  <div data-content="Google Drive">
+    <webview autosize src="https://drive.google.com" plugins allowpopups data-id="2" class="hide-webview"></webview>
+  </div>
+  <div data-content="Google Classroom">
+    <webview autosize src="https://classroom.google.com" plugins allowpopups data-id="3" class="hide-webview"></webview>
+  </div>
+  <div data-content="Gmail">
+    <webview autosize src="https://mail.google.com" plugins allowpopups data-id="4" class="hide-webview"></webview>
+  </div> 
+  <div data-content="Google Docs">
+    <webview autosize src="https://docs.google.com" plugins allowpopups data-id="5" class="hide-webview"></webview>
+  </div>
+  <div data-content="Genesis">
+    <webview autosize src="https://parents.edison.k12.nj.us/genesis/parents?gohome=true" plugins allowpopups data-id="6" class="hide-webview"></webview>
+  </div>
+  <div data-content="Google Slides">
+    <webview autosize src="https://docs.google.com/presentation" plugins allowpopups data-id="7" class="hide-webview"></webview>
+  </div>
+</div>
+ 
+<script src="quick_work.js">
+  //require('./quick_work.js');
+</script>
+</body>
+</html> 
