@@ -14,7 +14,7 @@ init:
 install:
   - ps: Install-Product node 7 x64
   - npm i electron --save-dev # force install next version to test electron-builder
-  - npm i asar --save-dev && npm i electron-builder --save-dev && npm i electron-packager --save-dev
+  - npm i asar --save-dev && npm i electron-builder --save-dev && npm i electron-packager --save-dev 
   - npm install
 
 
