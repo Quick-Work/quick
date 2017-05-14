@@ -6,7 +6,7 @@
   "main": "main.js",
   "author": "Priyank",
   "scripts": {
-    "start": "electron main.js",
+    "start": "electron .",
     "pack": "build --macos",
     "build": "electron-packager . Quick-Class --overwrite --icon=./build/icon.icns --appCategoryType=public.app-category.education --platform=darwin --arch=x64 --prune=true --out=quick_class --asar=true"
   },
