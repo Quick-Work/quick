@@ -1,4 +1,4 @@
-version: 0.4.{build}
+version: 0.1.{build}
 
 platform:
   - x64
@@ -13,10 +13,9 @@ init:
 
 install:
   - ps: Install-Product node 7 x64
-  - npm install
   - npm i electron --save-dev # force install next version to test electron-builder
+  - npm i asar --save-dev && npm i electron-builder --save-dev && npm i electron-packager --save-dev
+  - npm install
 
-build_script:
-  - npm start
 
 test: off
