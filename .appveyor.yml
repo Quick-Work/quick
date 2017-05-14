@@ -18,6 +18,6 @@ install:
   - npm i electron --save-dev # force install next version to test electron-builder
 
 build_script:
-  - npm -v
+  - npm start
 
 test: off
